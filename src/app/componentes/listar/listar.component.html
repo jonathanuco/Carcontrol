@@ -1,0 +1,24 @@
+<br>
+<p class="fs-1">Datos Vehiculos</p>
+<table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Codigo</th>
+        <th scope="col">Placa Vehiculo</th>
+        <th scope="col">Tipo de vehiculo</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Programa</th>
+        <th scope="col">Fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vehiculos of vehiculos">
+        <th scope="row">{{vehiculos.idvehiculo}}</th>
+        <td>{{vehiculos.placavehiculo}}</td>
+        <td>{{vehiculos.tipovehiculo}}</td>
+        <td>{{vehiculos.marcavehiculo}}</td>
+        <td>{{vehiculos.programa}}</td>
+        <td>{{vehiculos.fecha}}</td>
+      </tr>
+    </tbody>
+  </table>

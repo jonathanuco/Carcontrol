@@ -10,7 +10,7 @@ import { Vehiculos } from '../../modelo/vehiculos';
 })
 export class ListarComponent implements OnInit {
 
-  listadoVehiculos: any[] = [];
+  listadoVehiculos: Vehiculos[] = [];
   constructor(private VehiculosService: VehiculosService) { }
 
   ngOnInit(): void {

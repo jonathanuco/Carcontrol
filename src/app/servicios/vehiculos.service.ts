@@ -12,8 +12,8 @@ export class VehiculosService {
 
   constructor(private http: HttpClient) { }
 
-listarVehiculos(): Observable<Vehiculos[]>{
+  listarVehiculos(): Observable<Vehiculos[]>{
   return this.http.get<Vehiculos[]>(this.endPoint);
 
-}
+  }
 }

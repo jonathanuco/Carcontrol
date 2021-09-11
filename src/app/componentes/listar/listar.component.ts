@@ -10,13 +10,13 @@ import { Vehiculos } from '../../modelo/vehiculos';
 })
 export class ListarComponent implements OnInit {
 
-  vehiculos: Vehiculos[] = [];
+  listadoVehiculos: any[] = [];
   constructor(private VehiculosService: VehiculosService) { }
 
   ngOnInit(): void {
     this.VehiculosService.listarVehiculos().subscribe(
       resp =>{
-      this.vehiculos = resp;
+      this.listadoVehiculos = resp;
       }
     );
 
